@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Management Dashboard</title>
+    <link rel="stylesheet" href="Expense.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Finance Management Dashboard</h1>
+    </header>
+
+    <main>
+        <!-- Budget Input Section -->
+        <section class="budget-section">
+            <h2>Set Your Budget</h2>
+            <input type="number" id="budgetInput" placeholder="Enter your monthly budget" />
+            <button onclick="setBudget()">Set Budget</button>
+            <p id="budgetDisplay"></p>
+        </section>
+
+        <!-- Expense Input Section -->
+        <section class="expense-section">
+            <h2>Track Your Expenses</h2>
+            <input type="text" id="expenseName" placeholder="Expense Name" />
+            <input type="number" id="expenseAmount" placeholder="Expense Amount" />
+            <button onclick="addExpense()">Add Expense</button>
+        </section>
+
+        <!-- Expense List -->
+        <section class="expense-list-section">
+            <h2>Expense List</h2>
+            <ul id="expenseList"></ul>
+        </section>
+
+        <!-- Financial Goal Section -->
+        <section class="goal-section">
+            <h2>Set Your Financial Goals</h2>
+            <input type="text" id="goalName" placeholder="Goal Name" />
+            <input type="number" id="goalAmount" placeholder="Goal Amount" />
+            <button onclick="setGoal()">Set Goal</button>
+            <p id="goalDisplay"></p>
+        </section>
+    </main>
+
+    <script src="Expense.js"></script>
+</body>
+</html>
